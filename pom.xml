@@ -120,7 +120,6 @@
 		<module>twitter-tokafka-service</module>
 		<module>app-config-data</module>
 		<module>common-config</module>
-		<module>kafka-model</module>
 		<module>kafka</module>
 	</modules>
 </project>
