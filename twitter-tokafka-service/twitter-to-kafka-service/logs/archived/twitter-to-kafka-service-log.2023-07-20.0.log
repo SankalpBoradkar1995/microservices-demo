@@ -1,0 +1,23 @@
+2023-07-20 15:00:26 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:01:54 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:04:56 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:09:13 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twittertokafka.services.TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:10:33 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twittertokafka.services.TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:13:30 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twittertokafka.service.TwitterToKafkaApplicationTest]: TwitterToKafkaApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-20 15:13:30 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twittertokafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twittertokafka.service.TwitterToKafkaApplicationTest
+2023-07-20 15:13:31 [main] INFO  c.m.d.t.s.TwitterToKafkaApplicationTest - Starting TwitterToKafkaApplicationTest using Java 17.0.1 with PID 11156 (started by Sankalp in E:\Spring\Microservices-demo\twitter-tokafka-service)
+2023-07-20 15:13:31 [main] INFO  c.m.d.t.s.TwitterToKafkaApplicationTest - No active profile set, falling back to 1 default profile: "default"
+2023-07-20 15:13:31 [main] INFO  c.m.d.t.s.TwitterToKafkaApplicationTest - Started TwitterToKafkaApplicationTest in 0.838 seconds (process running for 2.048)
+2023-07-20 15:13:31 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - App started
+2023-07-20 15:13:31 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-07-20 15:15:13 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.1 with PID 16596 (E:\Spring\Microservices-demo\twitter-tokafka-service\target\classes started by Sankalp in E:\Spring\Microservices-demo\twitter-tokafka-service)
+2023-07-20 15:15:13 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-20 15:15:13 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.693 seconds (process running for 1.578)
+2023-07-20 15:15:13 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - App started
+2023-07-20 15:15:13 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-07-20 15:17:57 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.1 with PID 12760 (E:\Spring\Microservices-demo\twitter-tokafka-service\target\classes started by Sankalp in E:\Spring\Microservices-demo\twitter-tokafka-service)
+2023-07-20 15:17:57 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-07-20 15:17:58 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.682 seconds (process running for 1.447)
+2023-07-20 15:17:58 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - App started
+2023-07-20 15:17:58 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-07-20 15:17:58 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Microservices demo
