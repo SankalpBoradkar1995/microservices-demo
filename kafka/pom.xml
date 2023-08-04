@@ -13,6 +13,7 @@
 		<avro.version>1.10.0</avro.version>
 		<spring-boot.version>2.3.4.RELEASE</spring-boot.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<spring-kafka.version>2.6.2</spring-kafka.version>
 	</properties>
 	<modules>
 		<module>kafka-model</module>
@@ -24,6 +25,18 @@
 			<artifactId>avro</artifactId>
 			<version>${avro.version}</version>
 		</dependency>
+		<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-webflux</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+		<dependency>
+				<groupId>org.springframework.kafka</groupId>
+				<artifactId>spring-kafka</artifactId>
+				<version>${spring-kafka.version}</version>
+			</dependency>
+		
+		
 	</dependencies>
 	
 	<build>
