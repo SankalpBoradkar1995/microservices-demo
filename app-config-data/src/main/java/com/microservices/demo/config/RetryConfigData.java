@@ -4,8 +4,15 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+
+
+//@Data
 @Data
+@Getter
+@Setter
 @Configuration
 @ConfigurationProperties(prefix="retry-config")
 public class RetryConfigData {

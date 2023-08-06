@@ -18,6 +18,7 @@
 	<modules>
 		<module>kafka-model</module>
 		<module>kafka-admin</module>
+        <module>kafka-producer</module>
 	</modules>
 	<dependencies>
 		<dependency>

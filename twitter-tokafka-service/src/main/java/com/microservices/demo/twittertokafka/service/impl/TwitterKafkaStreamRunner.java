@@ -4,13 +4,14 @@ import java.util.Arrays;
 
 import javax.annotation.PreDestroy;
 
+import com.microservices.demo.config.TwitterToKafkaConfigData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.microservices.demo.config.TwitterToKafkaConfigData;
+
 import com.microservices.demo.twittertokafka.service.component.TwitterCreds;
 
 import com.microservices.demo.twittertokafka.service.listener.TwitterToKafkaStatusListener;
