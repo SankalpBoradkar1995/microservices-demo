@@ -1,0 +1,12 @@
+1. It will use kafka-producer model to send data to kafka
+2. We will use spring-kafka dependency to write kafka-producer implementation
+3. It will use kafka-admin module to create and check topics created and schema registry is up and running
+4. Inside TwitterToKafkaStatus listener we have passing status to get it transformed into avro model
+5. We have StreamInitializer interface with one init method
+6. Inside KafkaStreamInitializer we are creating topics and checking schema registry
+
+# In main twitter-tokafka-service first we will create kafka topics and check schema registry with the help of streamInitializer.init();
+--> Here topics will be created and schema registry check will be done
+# Then we will start the tweets either from moc tweets or twitter4j as per our yml configuration with the help of streamRunner.start();
+--> Here depending on yml configuration tweets will start on separate thread and onStatus method will get called to convert status / tweets in to avro model
+    Those avro models then will be sent to kafka

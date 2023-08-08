@@ -1,0 +1,45 @@
+1. In this module we are using spring-kafka dependency to communicate with different kafka modules within our application 
+ex. Kafka-admin, kafka-producers etc.
+
+2. Spring kafka provides templet (interface) to send data/message and provides kafkalistener annotation to consume kafka topic
+
+3. kafka-producer-config:
+  key-serializer-class: org.apache.kafka.common.serialization.LongSerializer
+  --> We will be using long variable for key
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
+  --> We will use KafkaAvroSerializer class from confluence library for value serialization
+  compression-type: snappy
+  --> Arranges compression ratio for higher compress/de compress speed
+  --> Snappy is compression library from google, other options are like gzip etc.
+  acsk: all
+  --> We want to get acknowledgement from all replicas fo more resilience
+  --> Available options are all,1,0
+  --> All: We want to get acknowledgement from all replicas fo more resilience
+  --> 1: Wait for current broker's acknowledgement who gets request from producer client
+  --> 0: No acknowledgement
+  batch-size: 16384
+  --> Its a default size
+  --> Batching is maximum bytes included in each batch then this batch are compressed
+  --> Bigger batch helps compression and thus less kafka requests to kafka for same
+  --> We can tune in batch size for better throughput
+  batch-size-boost-factor: 100
+  linger-ms: 5
+  --> Linger property is added to wait / delay on producers if the load is less before sending it to kafka
+  request-timeout-ms: 60000
+  --> If no acknowledgement came after 60 seconds then application will throw time out error
+  retry-count: 5
+  --> In ase of time out error we will retry to check acknowledgement for 5 times
+
+4. Using bean of type KafkaTemplet<K,V> (K&V are generic) from spring-kafka dependency to add data/message to kafka
+5. To create KafkaTemplet bean we need to create DefaultkafkaProducerFactory bean
+--> kafkaTemplet(ProducerFactory<K,V> producerFactory, V)
+6. KafkaTemplet is a thread safe templet from spring-kafka for executing high level producer operations
+7. Created Interface of type KafkaProducer<K,V> and one abstract method send which accepts (String topicName, K key, V message)
+8. Implementing the  KafkaProducer interface in service class with K as Long and V as KafkaAvroModel class from Kafka-Model
+9. Using KafkaTemplet from spring-kafka templet with K,V as Long and KafkaAvroModel class from Kafka-Model and 
+   using send method of our custom interface KafkaProducer<K,V> to send message to Kafka
+   
+   
+   # KafkaProducerConfig class has all configurations for KafkaTemplet
+   # KafkaProducer interface has custom send methhod for KafkaTemplet
+   # Send method in non blocking, it will not wait for results continuously
