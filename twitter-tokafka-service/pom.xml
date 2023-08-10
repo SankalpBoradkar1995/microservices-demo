@@ -30,22 +30,10 @@
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.microservices.demo</groupId>
-			<artifactId>app-config-data</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.microservices.demo</groupId>
-			<artifactId>kafka-admin</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.microservices.demo</groupId>
-			<artifactId>kafka-model</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.microservices.demo</groupId>
-			<artifactId>kafka-producer</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>com.microservices.demo</groupId>
+            <artifactId>app-config-data</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>io.projectreactor.netty</groupId>
 			<artifactId>reactor-netty</artifactId>
@@ -60,10 +48,15 @@
 			<artifactId>json</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-avro-serializer</artifactId>
-			
+			<groupId>com.microservices.demo</groupId>
+			<artifactId>kafka-admin</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>kafka-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 	</dependencies>
 
 	<build>

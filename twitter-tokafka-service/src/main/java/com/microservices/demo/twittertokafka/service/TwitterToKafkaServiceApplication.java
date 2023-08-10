@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.FileSystemResource;
 
 import com.microservices.demo.config.TwitterToKafkaConfigData;
-import com.microservices.demo.twittertokafka.service.init.StreamInitializer;
 import com.microservices.demo.twittertokafka.service.runner.StreamRunner;
 
 import twitter4j.Twitter;
@@ -23,16 +22,14 @@ import twitter4j.conf.ConfigurationBuilder;
 
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 	
-	
+	private final TwitterToKafkaConfigData twitterToKafkaConfigData;
 	private final StreamRunner streamRunner;
-	private final StreamInitializer streamInitializer;
 	private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
 	
 	public TwitterToKafkaServiceApplication(TwitterToKafkaConfigData config,
-			StreamRunner streamrunner,
-			StreamInitializer initializer) {
+			StreamRunner streamrunner ) {
+		this.twitterToKafkaConfigData = config;
 		this.streamRunner = streamrunner;
-		this.streamInitializer = initializer;
 	}
 	
 	public static void main(String args[])
@@ -48,7 +45,8 @@ public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		LOG.info("App started");
-		streamInitializer.init();
+		LOG.info(Arrays.toString(twitterToKafkaConfigData.getTwitterKeywords().toArray(new String[]{})));
+		LOG.info(twitterToKafkaConfigData.getWelcomeMessage());
 		streamRunner.start();
 	}
 

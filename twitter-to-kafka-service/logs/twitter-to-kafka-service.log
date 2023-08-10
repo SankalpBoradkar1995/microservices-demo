@@ -1,38 +1,23 @@
-2023-08-08 20:21:34 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-D1ULCAD with PID 12240 (E:\Spring\Microservices-demo\twitter-tokafka-service\target\classes started by borad in E:\Spring\Microservices-demo)
-2023-08-08 20:21:34 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2023-08-08 20:21:35 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
-2023-08-08 20:21:35 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-08-08 20:21:35 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.config.internalAutoProxyCreator': Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:229)
-	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
-	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at com.microservices.demo.twittertokafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:40)
-Caused by: java.lang.NoClassDefFoundError: org/aspectj/lang/annotation/Pointcut
-	at org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory.<clinit>(AbstractAspectJAdvisorFactory.java:62)
-	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.initBeanFactory(AnnotationAwareAspectJAutoProxyCreator.java:82)
-	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.setBeanFactory(AbstractAdvisorAutoProxyCreator.java:65)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1816)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1781)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	... 16 common frames omitted
-Caused by: java.lang.ClassNotFoundException: org.aspectj.lang.annotation.Pointcut
-	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
-	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
-	... 22 common frames omitted
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-D1ULCAD with PID 21456 (E:\Spring\Microservices-demo\twitter-tokafka-service\target\classes started by borad in E:\Spring\Microservices-demo)
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.779 seconds (JVM running for 1.207)
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - App started
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Hello microservices!
+2023-08-06 10:20:55 [main] INFO  c.m.d.t.s.impl.MockKafkaStreamRunner - Starting mock filtering tweeter streams for the keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-08-06 10:20:55 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: sed posuere ipsum libero porttitor ipsum Lorem massa Elasticsearch Lorem libero massa amet Maecenas purus dolor
+2023-08-06 10:20:56 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: porttitor massa sit massa adipiscing lectus lectus Microservices sed lectus elit consectetuer magna consectetuer
+2023-08-06 10:20:57 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: elit ultricies consectetuer ipsum lectus Maecenas Java consectetuer amet congue amet elit
+2023-08-06 10:20:58 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: congue pulvinar libero Elasticsearch ipsum purus
+2023-08-06 10:20:59 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: libero Lorem purus ipsum Fusce sit purus purus adipiscing Fusce Kafka sit libero massa magna sed ultricies malesuada sed malesuada
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication on DESKTOP-D1ULCAD with PID 18168 (E:\Spring\Microservices-demo\twitter-tokafka-service\target\classes started by borad in E:\Spring\Microservices-demo)
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.739 seconds (JVM running for 1.176)
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - App started
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.TwitterToKafkaServiceApplication - Hello microservices!
+2023-08-06 10:28:40 [main] INFO  c.m.d.t.s.impl.MockKafkaStreamRunner - Starting mock filtering tweeter streams for the keywords: [Java, Microservices, Kafka, Elasticsearch]
+2023-08-06 10:28:40 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: congue libero pulvinar ultricies magna Maecenas pulvinar pulvinar Maecenas malesuada elit Kafka congue sed magna adipiscing Fusce magna sit libero dolor
+2023-08-06 10:28:41 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: Lorem ipsum magna lectus sit adipiscing magna ipsum Maecenas pulvinar Kafka massa massa malesuada congue lectus elit congue dolor
+2023-08-06 10:28:42 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: Lorem dolor magna malesuada Maecenas elit sed purus ultricies Elasticsearch posuere ultricies massa pulvinar sed elit ipsum elit
+2023-08-06 10:28:43 [pool-1-thread-1] INFO  c.m.d.t.s.l.TwitterToKafkaStatusListener - Twitter status: consectetuer ipsum elit porttitor Elasticsearch posuere elit massa
