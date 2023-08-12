@@ -11,8 +11,6 @@ import lombok.Setter;
 
 //@Data
 @Data
-@Getter
-@Setter
 @Configuration
 @ConfigurationProperties(prefix="retry-config")
 public class RetryConfigData {

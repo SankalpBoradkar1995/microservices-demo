@@ -12,6 +12,19 @@
 	<artifactId>twitter-tokafka-service</artifactId>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.microservices.demo</groupId>
+			<artifactId>app-config-data</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.microservices.demo</groupId>
+			<artifactId>kafka-admin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.microservices.demo</groupId>
+			<artifactId>kafka-producer</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -26,37 +39,22 @@
 			<artifactId>twitter4j-stream</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<scope>provided</scope>
-		</dependency>
-        <dependency>
-            <groupId>com.microservices.demo</groupId>
-            <artifactId>app-config-data</artifactId>
-        </dependency>
-		<dependency>
-			<groupId>io.projectreactor.netty</groupId>
-			<artifactId>reactor-netty</artifactId>
-			<version>0.9.12.RELEASE</version>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
+			<groupId>org.twitter4j</groupId>
+			<artifactId>twitter4j-stream</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.microservices.demo</groupId>
-			<artifactId>kafka-admin</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
 		</dependency>
-		<dependency>
-				<groupId>com.microservices.demo</groupId>
-				<artifactId>kafka-model</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 	</dependencies>
 
 	<build>
