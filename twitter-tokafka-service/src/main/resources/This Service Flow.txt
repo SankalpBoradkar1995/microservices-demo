@@ -1,0 +1,14 @@
+1. Main class is  "TwitterToKafkaServiceApplication"
+2. We are injecting 2 dependencies which are "StreamRunner" and "StreamInitializer"
+3. Implementation of this custom interface StreamRunner is provided in "KafkaStreamInitializer" class
+4. In "KafkaStreamInitializer" we are checking if kafka topics are created and schema registry is up and running
+5. Implementation of "StreamInitializer" interface is given in "MockKafkaStreamRunner" class
+6. "simulateTwitterStream" method of class "MockKafkaStreamRunner" is getting called via start method and in separate thread we are creating mock tweets
+7. After creating tweets we need to send it to kafka topics
+8. So from there we are calling "onStatus" method of "TwitterToKafkaStatusListener"
+9. There firstly we acre getting Avro model from the status we just created 
+10. Then calling "send: method of custom interface "KafkaProducer"
+11. We have implemented "KafkaProducer" in the class "TwitterkafkaProducer"
+12. In KafkaProducer class then we are sending data to kafka topic
+13. But nature of this send method is of ListenableFuture future hence it will work in async way
+14. We have implemented onSuccess and onFailure for this ListenableFuture

@@ -7,12 +7,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
+import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
 import com.microservices.demo.kafka.avro.model.TwitterAvroModel;
 import com.microservices.demo.kafka.producer.config.service.KafkaProducer;
 
+
+@Service
 public class TwitterkafkaProducer implements KafkaProducer<Long, TwitterAvroModel>{
 
 	private final Logger LOG = LoggerFactory.getLogger(TwitterkafkaProducer.class);
@@ -23,6 +26,15 @@ public class TwitterkafkaProducer implements KafkaProducer<Long, TwitterAvroMode
 	{
 		this.kafkaTemplet = templet;
 	}
+	
+	/*
+	 * Following send method is our custom send method from interface kafkaProducer of type KafkaProducer <K,V>
+	 * where K would be of type Long and Value will be of TwitterAvroModel
+	 */
+	
+	/*
+	 * 
+	 */
 	
 	@Override
     public void send(String topicName, Long key, TwitterAvroModel message) {
