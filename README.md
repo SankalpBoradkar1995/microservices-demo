@@ -9,5 +9,5 @@
 	#   Kafka admin client manage and inspects  brokers, topics and copnfiguration
 	#2  RetryConfig -> It has Retrytemplet configured with values from application.yml file
 # Retry mechanism is achieved via three main methods #checkTopicsCreated, #checkSchemaRegistry, #createTopics
-#Configured kafka admin, producer and model and using them inside main microservice twitter-tokafka-service. 
-#Building docker image of microservice with help of spring-boot:build-image property within spring-boot-maven-plugin with goal as maven install
+# Configured kafka admin, producer and model and using them inside main microservice twitter-tokafka-service. 
+# Building docker image of microservice with help of spring-boot:build-image property within spring-boot-maven-plugin with goal as maven install
