@@ -1,0 +1,13 @@
+spring:
+ application:
+  name: config-server
+ cloud:
+  config:
+   server:
+    git:
+     uri: https://github.com/SankalpBoradkar1995/spring-cloud-config-server-repository
+     default-lable: main
+     username: SankalpBoradkar1995
+     password: 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
+     clone-on-start: true
+  fail-fast: true

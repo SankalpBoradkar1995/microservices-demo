@@ -1,0 +1,2 @@
+1. Bootstrap.yml has priority over application.yml
+2. When application context loaded by parent application it fetched configuration from bootstrap.yml before application.yml

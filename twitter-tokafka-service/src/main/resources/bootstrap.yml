@@ -1,0 +1,9 @@
+spring:
+ application:
+  name: twitter-tokafka-service
+ profiles:
+  active: twitter_tokafka
+ cloud:
+  config:
+   name: twitter-tokafka-service,config-client
+   uri: http://localhost:8888
