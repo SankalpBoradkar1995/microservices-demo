@@ -7,3 +7,5 @@ spring:
   config:
    name: twitter-tokafka-service,config-client
    uri: http://localhost:8888
+   username: spring_cloud_user
+   password: springCloud_pwd!
