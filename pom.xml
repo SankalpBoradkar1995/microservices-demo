@@ -30,6 +30,7 @@
 		<spring-cloud-config-server.version>2.2.6.RELEASE</spring-cloud-config-server.version>
 		<spring-cloud-dependencies.version>Hoxton.SR9</spring-cloud-dependencies.version>
 		<spring-cloud-starter-config.version>2.2.6.RELEASE</spring-cloud-starter-config.version>
+		<jasypt-spring-boot-starter.version>3.0.3</jasypt-spring-boot-starter.version>
 	</properties>
 
 	<dependencyManagement>
@@ -161,6 +162,15 @@
 				<artifactId>spring-boot-starter-security</artifactId>
 				<version>${spring-boot.version}</version>
 			</dependency>
+
+			<!--
+			https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
+			<dependency>
+				<groupId>com.github.ulisesbocchio</groupId>
+				<artifactId>jasypt-spring-boot-starter</artifactId>
+				<version>${jasypt-spring-boot-starter.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 

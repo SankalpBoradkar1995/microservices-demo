@@ -1,0 +1,294 @@
+!SESSION 2023-08-22 19:47:53.541 -----------------------------------------------
+eclipse.buildId=4.19.1.202308011926
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-08-22 19:47:54.412
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-08-22 19:48:59.662
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-22 19:48:59.662
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-08-22 19:49:02.478
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\borad'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.825
+!MESSAGE Classpath changed for project: app-config-data
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.826
+!MESSAGE Classpath changed for project: common-config
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.826
+!MESSAGE Classpath changed for project: config-server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.827
+!MESSAGE Classpath changed for project: kafka-admin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.827
+!MESSAGE Classpath changed for project: kafka-model
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.827
+!MESSAGE Classpath changed for project: kafka-producer
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:45.827
+!MESSAGE Classpath changed for project: twitter-tokafka-service
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-22 19:49:45.957
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:178)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:62)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:272)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:258)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2402)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:254)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-22 19:49:45.958
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-22 19:49:45.958
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-22 19:49:45.958
+!MESSAGE E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.508
+!MESSAGE Classpath changed for project: app-config-data
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.509
+!MESSAGE Classpath changed for project: common-config
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.509
+!MESSAGE Classpath changed for project: config-server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.510
+!MESSAGE Classpath changed for project: kafka-admin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.510
+!MESSAGE Classpath changed for project: kafka-model
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.511
+!MESSAGE Classpath changed for project: kafka-producer
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:46.511
+!MESSAGE Classpath changed for project: twitter-tokafka-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.203
+!MESSAGE Classpath changed for project: app-config-data
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.204
+!MESSAGE Boot project ADDED: app-config-data
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.204
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.221
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-22 19:49:49.232
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Users\borad\Downloads\sts-4.19.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\Users\borad\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\borad\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\borad\Downloads\sts-4.19.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.48.0.202308011907\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=E:/Spring/Git/Microservices/microservices-demo/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1692713989232
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.233
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-08-22 19:49:49.238
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11504
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:49.246
+!MESSAGE Classpath changed for project: app-config-data
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:50.403
+!MESSAGE Classpath changed for project: common-config
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:50.407
+!MESSAGE Boot project ADDED: common-config
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:50.450
+!MESSAGE Classpath changed for project: common-config
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:51.423
+!MESSAGE Classpath changed for project: config-server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:51.430
+!MESSAGE Boot project ADDED: config-server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:51.459
+!MESSAGE Classpath changed for project: config-server
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:52.963
+!MESSAGE Classpath changed for project: kafka-admin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:52.973
+!MESSAGE Boot project ADDED: kafka-admin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:53.029
+!MESSAGE Classpath changed for project: kafka-admin
+
+!ENTRY org.eclipse.core.resources 4 2 2023-08-22 19:49:53.726
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.internal.compiler.ast.FieldDeclaration.resolve(org.eclipse.jdt.internal.compiler.lookup.MethodScope)" because "fieldDecl" is null
+	at org.eclipse.jdt.internal.compiler.lookup.FieldBinding.constant(FieldBinding.java:223)
+	at org.eclipse.jdt.internal.compiler.lookup.FieldBinding.constant(FieldBinding.java:249)
+	at org.eclipse.jdt.internal.compiler.ast.SingleNameReference.checkFieldAccess(SingleNameReference.java:224)
+	at org.eclipse.jdt.internal.compiler.ast.SingleNameReference.resolveType(SingleNameReference.java:1042)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:739)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1113)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:662)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:388)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:571)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1506)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1631)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:668)
+	at org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:905)
+	at org.eclipse.jdt.internal.compiler.ProcessTaskManager.run(ProcessTaskManager.java:145)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:54.678
+!MESSAGE Classpath changed for project: kafka-model
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:54.678
+!MESSAGE Boot project ADDED: kafka-model
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:58.462
+!MESSAGE Classpath changed for project: kafka-producer
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:58.462
+!MESSAGE Boot project ADDED: kafka-producer
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:58.518
+!MESSAGE Classpath changed for project: kafka-producer
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-22 19:49:58.607
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:178)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:62)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:272)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:258)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2402)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:254)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-22 19:49:58.607
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-22 19:49:58.607
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-22 19:49:58.607
+!MESSAGE E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:59.948
+!MESSAGE Classpath changed for project: twitter-tokafka-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:49:59.962
+!MESSAGE Boot project ADDED: twitter-tokafka-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-22 19:50:00.017
+!MESSAGE Classpath changed for project: twitter-tokafka-service
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-22 19:50:03.730
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:178)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:62)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:272)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:258)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2402)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:254)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-22 19:50:03.730
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-22 19:50:03.730
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-22 19:50:03.730
+!MESSAGE E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-08-22 19:50:19.681
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:178)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:62)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:272)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:258)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:104)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2382)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2402)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:138)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:62)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:254)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:206)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: OK
+Contains: E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2023-08-22 19:50:19.681
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2023-08-22 19:50:19.681
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2023-08-22 19:50:19.681
+!MESSAGE E:\Spring\Git\Microservices\microservices-demo overlaps the workspace location: E:\Spring\Git\Microservices\microservices-demo
