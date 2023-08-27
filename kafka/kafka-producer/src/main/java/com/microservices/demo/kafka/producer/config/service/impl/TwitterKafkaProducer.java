@@ -16,13 +16,13 @@ import com.microservices.demo.kafka.producer.config.service.KafkaProducer;
 
 
 @Service
-public class TwitterkafkaProducer implements KafkaProducer<Long, TwitterAvroModel>{
+public class TwitterKafkaProducer implements KafkaProducer<Long, TwitterAvroModel>{
 
-	private final Logger LOG = LoggerFactory.getLogger(TwitterkafkaProducer.class);
+	private final Logger LOG = LoggerFactory.getLogger(TwitterKafkaProducer.class);
 	private final KafkaTemplate<Long, TwitterAvroModel> kafkaTemplet;
 	
 	
-	public TwitterkafkaProducer(KafkaTemplate<Long, TwitterAvroModel> templet)
+	public TwitterKafkaProducer(KafkaTemplate<Long, TwitterAvroModel> templet)
 	{
 		this.kafkaTemplet = templet;
 	}
