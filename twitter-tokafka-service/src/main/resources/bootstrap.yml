@@ -1,12 +1,11 @@
 spring:
- application:
-  name: twitter-tokafka-service
- profiles:
-  active: twitter_tokafka
- cloud:
-  config:
-   name: twitter-tokafka-service,config-client
-   uri: http://localhost:8888
-   username: spring_cloud_user
-   password: ENC(k4F+kMhJiJYEuNREQMzHuGfdK+jdZpF+r5fKuCeaJo6p+pYPQyfj/I3gHlLEq2jD)
- 
+  application:
+    name: twitter-tokafka-service
+  profiles:
+    active: twitter_tokafka
+    cloud:
+      config:
+        name: twitter-tokafka-service,config-client
+        uri: http://localhost:8888
+        username: spring_cloud_user
+        password: ENC(yzFLYCHf0GbsEd1Jj3zd6jEdKX0noyI6n37FWIajnQyuTouxvF68SE2eY7J+PXMI)
