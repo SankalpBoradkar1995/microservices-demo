@@ -1,4 +1,3 @@
 jasypt:
-  encryptor:
-    username: spring_cloud_user
-    password: my_secret
+ encryptor:
+  password: test1234

@@ -8,10 +8,13 @@ spring:
           uri: https://github.com/SankalpBoradkar1995/spring-cloud-config-server-repository
           default-label: main
           username: SankalpBoradkar1995
-          password: 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
+          password: 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
           clone-on-start: true
   fail-fast: true
   security:
     user:
-      username: spring_cloud_user
-      password: ENC(yzFLYCHf0GbsEd1Jj3zd6jEdKX0noyI6n37FWIajnQyuTouxvF68SE2eY7J+PXMI)
+      name: spring_cloud_user
+      password: ENC(dj+owzn7UaxglD53ZYI97pPTdF4GaJs6deSy1LfNmsvqMjbAK1ebFkiEgtWePY9B)
+jasypt:
+ encryptor:
+  password: test1234
